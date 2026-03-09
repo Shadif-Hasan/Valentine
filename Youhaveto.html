@@ -2,6 +2,7 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Be My Valentine 💘</title>
 
   <style>
@@ -22,6 +23,8 @@
 
     h1, p {
       color: white;
+      margin: 0;
+      padding: 0 10px;
     }
 
     h1 {
@@ -31,7 +34,6 @@
     p {
       font-size: 1.3em;
       margin-top: 20px;
-      padding: 0 20px;
       transition: 0.3s;
     }
 
@@ -72,6 +74,26 @@
       to {
         transform: translateY(-110vh);
         opacity: 0;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .container {
+        padding-top: 80px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 12px 25px;
       }
     }
   </style>
